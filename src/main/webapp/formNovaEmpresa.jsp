@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 	<body>
+		<c:if test="${ not empty empresa}">
+			Empresa ${ empresa } cadastrada com sucesso!
+		</c:if>
+		<br />
 		<form action="${linkServletNovaEmpresa}" method="post">
 			Nome: <input type="text" name="nome" />
 			Data Abertura: <input type="text" name="data" />
